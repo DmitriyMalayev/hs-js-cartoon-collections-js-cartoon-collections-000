@@ -1,24 +1,68 @@
-function dwarfRollCall(dwarves) {
-  var array = []
-  for(let i = 0; i <dwarves.length; i++){
-  array.push(`${i + 1}. ${dwarves[i]} `)
+function dwarfRollCall(dwarves){
+  let newArray = []
+  for(let i = dwarves.length/2; i<dwarves.length; i++){
+  newArray.push(`${i + 1}. ${dwarves[i]} `)
   }
-return array.join("")
-  }
-  
-  
-var planeteerCalls = ["earth", "wind", "fire", "water", "heart"]
+  return newArray.join("")
+}
 
 
 function summonCaptainPlanet(planeteerCalls){
-  var earthMan = [] 
-  
-  for(let i=0; i < planeteerCalls.length; i++){
-    earthMan.push((`${planeteerCalls[i]}!`).toUpperCase())
-  }
-  return earthMan
+  let superMan = []
+  for(let i=0; i<planeteerCalls.length; i++){
+    superMan.push((`${planeteerCalls[i]}!`).toUpperCase())
+  } 
+  return superMan 
 }
 
+function longPlaneteerCalls(words){
+  for(let i = 0; i<words.length; i++){
+    if (words[i].length > 4){
+      return true
+    } else {
+      return false 
+    }
+  }
+}
+
+snacks.push("swiss")
+
+function findTheCheese(cheese){
+  for(let i = 0; i<cheese.length; i++){
+    if(cheese[i] === "cheddar"){
+        return "cheddar"
+    } else if(cheese[i] === "gouda"){
+        return "gouda"
+    } else if(cheese[i] === "camembert"){
+        return "camembert"
+    } else if(cheese[i] === "swiss"){
+        return "swiss"
+    } 
+  }
+     return "no cheese!"   
+}
+
+newArray = ["Bob", "Mary", "Billy"]
+newArray2 = []
+
+function wordsWithB(newArray){
+for(i=0; i<newArray.length; i++){
+  if(newArray[i].firstLetter("B")){
+    newArray2.push(newArray[i])
+}   
+}
+  return newArray2 
+}
+
+
+
+
+
+
+
+
+
+/*
 var checkWords = []
 
 function longPlaneteerCalls(calls){
@@ -31,48 +75,29 @@ function longPlaneteerCalls(calls){
   }
 }
 
-
-
 function findTheCheese(cheese){
 for(let i=0; i<cheese.length; i++){
   if(cheese[i] === "cheddar"){
-    return "cheddar" 
+    return "cheddar"
   } else if (cheese[i] === "gouda"){
-    return "gouda" 
+    return "gouda"
   } else if (cheese[i] === "camembert"){
-    return "camembert"} 
-}
+    return "camembert"
+  } } 
 return "no cheese!"
 }
 
 
-  
 
 
 
-/*
-
-let cities = ["Ankara", "Istambul", "Antalya", "Bursa", "Trabzon"];
-let city = "Bursa";
-let chars = 7;
-
-
-let match1 = cities.find(item => {
- if (city === item) 
-  return true  
-})
- console.log(`item from cities that was, ${match1}`)
-  
-       
-/*
-  
-}
-
-
-
-function longPlaneteerCalls(words) {
-}
-
-function findTheCheese (foods) {
-}
 */
+
+
+
+
+
+
+
+
+
